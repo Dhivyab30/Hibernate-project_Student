@@ -78,7 +78,7 @@ Example Maven dependencies:
 
 5. Configure hibernate.cfg.xml with your database details.
 
-Usage / Running the Application:
+🧑‍💻 Usage / Running the Application:
 ---------------------------------
 1. Open CRUDApp.java.
 
@@ -94,53 +94,53 @@ Usage / Running the Application:
 Example Flow:
 -------------
 Insert:
---------
+
 Student s1 = new Student(101, "Nandhini", "Chennai");
 so.save(s1);
 ts.commit();
 
 Output:
--------
+
 Hibernate: insert into Student (sLocation, sName, sid) values (?, ?, ?)
 
 Read:
-------
+
 Student s = so.get(Student.class, 101);
 System.out.println(s);
 
 Output:
---------
+
 Student [sid=101, sName=Nandhini, sLocation=Chennai]
 
 Update:
---------
+
 Student su = so.get(Student.class, 102);
 su.setsLocation("Pondy");
 so.update(su);
 ts.commit();
 
 Output:
--------
+
 Hibernate: update Student set sLocation=?, sName=? where sid=?
 
 Delete:
---------
+
 Student sd = so.get(Student.class, 101);
 so.delete(sd);
 ts.commit();
 
 Output:
--------
+
 Hibernate: delete from Student where sid=?
 
-Running Test:
+🧪 Running Test:
 -------------
 
 ✓ The project can be manually tested by running each CRUD operation sequentially.
 
 ✓ Optional: Use JUnit to automate CRUD operation tests.
 
-Deployment:
+🌐 Deployment:
 -----------
 1. Package the project as a .jar using IDE or Maven.
 
@@ -150,7 +150,7 @@ Deployment:
 
 3. The database must be accessible and configured in hibernate.cfg.xml.
 
-Build With:
+🛠️ Build With:
 ------------
 ✓ Java – Programming language
 
@@ -164,7 +164,7 @@ Build With:
 
 ✓ Eclipse / IntelliJ – IDE for development
 
-Conclusion:
+🏁 Conclusion:
 ------------
 This project demonstrates the use of Hibernate ORM to manage database operations in Java efficiently.
 It shows how Hibernate handles CRUD operations, reduces boilerplate code, and improves maintainability.
