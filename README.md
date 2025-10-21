@@ -3,7 +3,7 @@
 This project is a simple CRUD (Create, Read, Update, Delete) application using Hibernate ORM and JPA annotations.
 It manages Student records in a database, allowing insertion, retrieval, modification, and deletion of student data. The application demonstrates how Hibernate simplifies database interactions compared to plain JDBC.
 
-Getting Started:
+🚀Getting Started:
 -------------------
 1. Clone or download the project repository.
 
@@ -14,7 +14,7 @@ Getting Started:
 4. Run the CRUDApp.java class to perform CRUD operations.
 
 
-Prerequisites:
+🧱 Prerequisites:
 ---------------
 
 ✓ Java JDK 11 or higher
@@ -47,7 +47,8 @@ sid	                    INT	             PRIMARY KEY
 sName                 	VARCHAR	         NOT NULL
 sLocation	              VARCHAR	
 
- Installation Steps:
+ 
+⚙️ Installation Steps:
 ---------------------
 1. Install Java JDK and set JAVA_HOME.
 
